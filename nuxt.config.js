@@ -1,8 +1,11 @@
+const webpack = require('webpack')
+
 const {
   title,
   homepage,
   description
 } = require('./package.json')
+
 const isProd = process.env.NODE_ENV === 'production'
 const baseUrl = isProd ? homepage : 'http://localhost:3000'
 
@@ -38,6 +41,20 @@ module.exports = {
       'axios'
     ],
     plugins: [
+      new webpack.LoaderOptionsPlugin({
+        options: {
+          stylus: {
+            use: [ require('rupture')() ],
+            preferPathResolver: 'webpack',
+            import: [
+              '~assets/stylus/config.styl',
+              '~assets/stylus/base.styl',
+              '~assets/stylus/buttons.styl'
+            ]
+          },
+          context: '/'
+        }
+      })
     ],
     extend (config, { isDev, isClient }) {
       config.devtool = 'source-map'
