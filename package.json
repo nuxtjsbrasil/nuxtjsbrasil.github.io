@@ -13,14 +13,20 @@
     "start": "nuxt start",
     "generate": "npm run clean && NODE_ENV=production nuxt generate",
     "deploy": "npm run generate && push-dir --dir=dist --branch=gh-pages --cleanup",
-    "lint": "eslint --ext .js,.vue . --fix",
+    "lint": "eslint --ext .js,.vue --fix --ignore-path .gitignore .",
     "test": "npm run lint && echo \"no has test\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nuxtjsbrasil/nuxtjsbrasil.github.io.git"
   },
-  "keywords": [],
+  "keywords": [
+    "site",
+    "nuxt",
+    "brasil",
+    "vue",
+    "comunity"
+  ],
   "author": "Comunidade Nuxt Brasil (https://github.com/nuxtjsbrasil)",
   "license": "MIT",
   "bugs": {
@@ -35,13 +41,18 @@
     "cross-env": "^5.2.0",
     "eslint": "^5.4.0",
     "eslint-config-standard": "^11.0.0",
+    "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.1.0",
     "eslint-plugin-html": "^4.0.5",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^4.0.0",
     "eslint-plugin-standard": "^3.1.0",
+    "eslint-plugin-vue": "^4.7.1",
     "push-dir": "^0.4.1",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "rupture": "^0.7.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
   }
 }
