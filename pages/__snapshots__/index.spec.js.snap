@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home should match with snapshot 1`] = `
+<div>
+  <section class="Hero">
+    <div class="Hero__inner">
+      <div class="Hero__logo">
+        <!---->
+        <h1>NUXT<span>BRASIL</span></h1>
+      </div>
+      <p class="Hero__lead">Grupo BR do NuxtJS
+        <br>Universal Vue.js Applications</p>
+      <div class="Hero__buttons">
+        <a href="https://github.com/nuxtjsbrasil" target="_blank" class="Button Button--primary">Github Nuxt Brasil</a>
+        <a href="https://nuxtjs.org/" target="_blank" class="Button Button--secondary">Nuxtjs.org (en)</a>
+      </div>
+    </div>
+  </section>
+</div>
+`;
