@@ -5,7 +5,10 @@
         <VueToNuxtLogo/>
         <h1>NUXT<span>BRASIL</span></h1>
       </div>
-      <p class="Hero__lead">Grupo BR do NuxtJS<br/>Universal Vue.js Applications</p>
+      <p class="Hero__lead">
+        <b class="tagline">grupo de usuários brasileiros</b>
+        <br/>Universal Vue.js Applications
+      </p>
       <div class="Hero__buttons">
         <a href="https://github.com/nuxtjsbrasil" target="_blank" class="Button Button--primary">Github Nuxt Brasil</a>
         <a href="https://nuxtjs.org/" target="_blank" class="Button Button--secondary">Nuxtjs.org (en)</a>
@@ -54,6 +57,8 @@ export default {
     line-height 1.2
     text-align center
     color #526488
+    .tagline
+      font-size 2rem
   &__buttons
     text-align center
     a
